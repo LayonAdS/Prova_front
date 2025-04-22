@@ -3,28 +3,25 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Tabela de Gerenciamento de Gastos</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='stile.css'>
     <script src='scripty.js'></script>
 </head>
 <body>
     <div class="container">
-
-     <h1 style="text-align: center;">Tabela de Gerenciamento de Gastos</h1>
-     <label for="">Descrição</label>
-     <input type="text" name="" class="form-control" id="Descricao">
-     <label for="">Valor</label>
-     <input type="number" name="" class="form-control" id="Valor">
-     <label for="">Categoria</label>
-     <input type="text" name="" class="form-control" id="Categoria">
-     <button onclick="SalvarGasto()">Salvar</button>
-
+        <h1 style="text-align: center;">Tabela de Gerenciamento de Gastos</h1>
+        <label for="">Descrição</label>
+        <input type="text" name="" class="form-control" id="Descricao">
+        <label for="">Valor</label>
+        <input type="text" name="" class="form-control" id="Valor">
+        <label for="">Categoria</label>
+        <input type="text" name="" class="form-control" id="Categoria">
+        <button onclick="salvarGasto()"> Salvar </button>
     </div>
     <div class="container" style="margin-top: 20px;">
         <table class="table table-striped" id="tabela">
             <tr>
-                <th>Gastos</th>
                 <th>Descrição</th>
                 <th>Valor</th>
                 <th>Categoria</th>
@@ -32,9 +29,7 @@
             </tr>
         </table>
     </div>
-    <div class="container" style="margin-top: 20px;">
-        <h2>Total de Gastos: R$<span id="totalGastos">0.00</span></h2>
-    </div>
-    
+    <div class="container" style="margin-top: 20px;" id="total">
+        </div>
 </body>
 </html>
