@@ -32,8 +32,8 @@ Este é um projeto web simples para gerenciar seus gastos. Ele permite adicionar
 ## Estrutura de Arquivos
 
 
- # Arquivo de estilos CSS
- # Arquivo com a lógica JavaScript
- # Arquivo HTML principal
+ ### Arquivo de estilos CSS
+ ### Arquivo com a lógica JavaScript
+ ### Arquivo HTML principal
 
 Feito por Layon Augusto da Silva
