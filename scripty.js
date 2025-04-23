@@ -31,8 +31,8 @@ function criarLista(){
 function excluirGasto(i){
     dadoslista.splice((i-1),1);
     document.getElementById("tabela").deleteRow(i);
-    criarLista(); // Recarrega a lista após a exclusão para atualizar a tabela
-    totalGastos(); // Recalcula o total após a exclusão
+    criarLista(); 
+    totalGastos(); 
     alert("Gasto excluído com sucesso!");
 }
 
@@ -44,8 +44,3 @@ function totalGastos(){
     document.getElementById("total").innerHTML = "Total de Gastos: R$" + total.toFixed(2);
 }
 
-// Chama totalGastos() para exibir o total inicial (se houver dados)
-window.onload = function() {
-    criarLista(); // Exibe a lista inicial (se houver dados)
-    totalGastos(); // Calcula o total inicial
-};

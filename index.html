@@ -11,12 +11,28 @@
 <body>
     <div class="container">
         <h1 style="text-align: center;">Tabela de Gerenciamento de Gastos</h1>
-        <label for="">Descrição</label>
-        <input type="text" name="" class="form-control" id="Descricao">
-        <label for="">Valor</label>
-        <input type="text" name="" class="form-control" id="Valor">
-        <label for="">Categoria</label>
-        <input type="text" name="" class="form-control" id="Categoria">
+        <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+            <div>
+                <label for="Descricao">Descrição</label>
+                <input type="text" name="" class="form-control" id="Descricao">
+            </div>
+            <div>
+                <label for="Valor">Valor</label>
+                <input type="text" name="" class="form-control" id="Valor">
+            </div>
+            <div>
+                <label for="Categoria">Categoria</label>
+                <select class="form-control" id="Categoria">
+                    <option value="">Categoria</option>
+                    <option value="Alimentação">Alimentação</option>
+                    <option value="Transporte">Transporte</option>
+                    <option value="Moradia">Moradia</option>
+                    <option value="Lazer">Lazer</option>
+                    <option value="Contas">Contas (Água, Luz, etc.)</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </div>
+        </div>
         <button onclick="salvarGasto()"> Salvar </button>
     </div>
     <div class="container" style="margin-top: 20px;">
@@ -30,6 +46,6 @@
         </table>
     </div>
     <div class="container" style="margin-top: 20px;" id="total">
-        </div>
+    </div>
 </body>
 </html>
