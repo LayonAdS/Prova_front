@@ -67,7 +67,3 @@ function totalGastos() {
     document.getElementById("total").innerHTML = "Total de Gastos: R$" + total.toFixed(2);
 }
 
-window.onload = function () {
-    criarLista();
-    totalGastos();
-};
